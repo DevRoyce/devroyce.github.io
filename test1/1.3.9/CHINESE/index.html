@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>粒子特效 - DEMO</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body oncontextmenu=self.event.returnValue=false>
+<div style="text-align:center;clear:both;position:absolute;top:0;left:260px">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+<canvas class="canvas"></canvas>
+
+<div class="help">?</div> 
+
+<div class="ui">
+  <input class="ui-input" type="text" />
+  <span class="ui-return">↵</span>
+</div>
+
+<div class="overlay">
+  <div class="tabs">
+    <div class="tabs-labels"><span class="tabs-label">命令</span><span class="tabs-label">分享</span></div>
+
+    <div class="tabs-panels">
+      <ul class="tabs-panel commands">
+        <li class="commands-item"><span class="commands-item-title">显示文字</span><span class="commands-item-info" data-demo="Hello :)">输入一些文字</span><span class="commands-item-action">演示</span></li>
+        <li class="commands-item"><span class="commands-item-title">倒计时</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">数字</span></span><span class="commands-item-action">演示</span></li>
+        <li class="commands-item"><span class="commands-item-title">显示时间</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">演示</span></li>
+        <li class="commands-item"><span class="commands-item-title">绘画矩形</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">长 x 宽</span></span><span class="commands-item-action">演示</span></li>
+        <li class="commands-item"><span class="commands-item-title">绘画圆形</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">直径</span></span><span class="commands-item-action">演示</span></li>
+
+        <li class="commands-item commands-item--gap"><span class="commands-item-title">很多命令</span><span class="commands-item-info" data-demo="现在的时间是|#time"><span class="commands-item-mode">命令1</span>&nbsp;|<span class="commands-item-mode">命令2</span></span><span class="commands-item-action">演示</span></li>
+      </ul>
+
+      <div class="tabs-panel ui-share">
+        <div class="ui-share-content">
+          <h1>分享</h1>
+          <p>只需向当前网址添加 <em>?t=文本</em> 即可共享任何静态或动态文本 例如:</p>
+			<p>
+				(假设当前网址为"www.shape-shifter.com")
+				<br	/>
+				<a href="https://www.shape-shifter.com/?t=#countdown 10">www.shape-shifter.com/?t=#countdown 10</a>
+			</p>
+        </div>
+	  </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
